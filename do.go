@@ -432,7 +432,7 @@ func (d *Dependency) doGetFileImports(dir string, sync *Memory) error {
 }
 
 func (d *Dependency) doLoadLockedImports(dir string, sync *Memory) error {
-	d.logger.Debugf("executing Load Lock Imports on [%s]", dir)
+	d.logger.Debugf("executing load Lock Imports on [%s]", dir)
 	lockImportFile := fmt.Sprintf("%s/%s", dir, LockImportFile)
 	newLockedImports := make(Imports)
 
@@ -478,7 +478,7 @@ func (d *Dependency) doMergeWithLockedImports(sync *Memory) error {
 }
 
 func (d *Dependency) doLoadGeneratedImports(dir string, sync *Memory) error {
-	d.logger.Debugf("executing Load Generated Imports on [%s]", dir)
+	d.logger.Debugf("executing load Generated Imports on [%s]", dir)
 	genImportFile := fmt.Sprintf("%s/%s", dir, GenImportFile)
 	newGeneratedImports := make(Imports)
 
